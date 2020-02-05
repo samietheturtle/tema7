@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .square {
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: green;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            background: red;
+            margin-top: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="square"></div>
+    <div class="circle"></div>
+
+
+    <script>
+        let squareURL = `http://mabe-kea.dk/E19/pics/frog.png`;
+        let circleURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+
+
+        document.querySelector(".square").innerHTML = `<img src = ${squareURL} alt= "grøn frø">`;
+        document.querySelector(".circle").innerHTML = `<img src = ${circleURL} alt= "Lyserød gris">`;
+
+    </script>
+</body>
+
+</html>
